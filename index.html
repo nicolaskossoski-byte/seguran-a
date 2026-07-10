@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Gerador de Senhas</h1>
+
+    <div class="senha-box">
+
+        <input
+            type="text"
+            id="campoSenha"
+            readonly
+            placeholder="Sua senha aparecerá aqui">
+
+    </div>
+
+    <div class="tamanho">
+
+        <h2>Número de caracteres</h2>
+
+        <div class="controle">
+
+            <button id="diminuir">-</button>
+
+            <span id="valorCaracteres">12</span>
+
+            <button id="aumentar">+</button>
+
+        </div>
+
+    </div>
+
+    <div class="opcoes">
+
+        <h2>Características da senha</h2>
+
+        <label>
+            <input type="checkbox" id="minusculas" checked>
+            Letras minúsculas
+        </label>
+
+        <label>
+            <input type="checkbox" id="maiusculas" checked>
+            Letras maiúsculas
+        </label>
+
+        <label>
+            <input type="checkbox" id="numeros" checked>
+            Números
+        </label>
+
+        <label>
+            <input type="checkbox" id="simbolos">
+            Símbolos
+        </label>
+
+    </div>
+
+    <button id="gerarSenha" class="btn-gerar">
+        Gerar Senha
+    </button>
+
+    <div class="forca">
+
+        <h2>Força da senha</h2>
+
+        <div class="barra">
+            <div id="progresso"></div>
+        </div>
+
+        <p id="textoForca">Média</p>
+
+    </div>
+
+    <div class="entropia">
+
+        <h2>Segurança</h2>
+
+        <p>
+            Entropia:
+            <span id="valorEntropia">0</span>
+            bits
+        </p>
+
+        <p>
+            Tempo estimado para descobrir:
+            <span id="tempoDescoberta">-</span>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
