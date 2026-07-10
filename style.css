@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter", sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:420px;
+    background:#1e293b;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+h2{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.senha-box{
+    margin-bottom:25px;
+}
+
+.senha-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#334155;
+    color:#fff;
+    font-size:18px;
+    text-align:center;
+}
+
+.tamanho{
+    margin-bottom:25px;
+}
+
+.controle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.controle button{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#3b82f6;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.controle button:hover{
+    background:#2563eb;
+}
+
+#valorCaracteres{
+    font-size:24px;
+    font-weight:bold;
+    min-width:35px;
+    text-align:center;
+}
+
+.opcoes{
+    margin-bottom:25px;
+}
+
+.opcoes label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:12px 0;
+    cursor:pointer;
+}
+
+.opcoes input{
+    width:18px;
+    height:18px;
+}
+
+.btn-gerar{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.btn-gerar:hover{
+    background:#16a34a;
+}
+
+.barra{
+    width:100%;
+    height:14px;
+    background:#475569;
+    border-radius:20px;
+    overflow:hidden;
+    margin:12px 0;
+}
+
+#progresso{
+    width:0%;
+    height:100%;
+    background:red;
+    transition:.4s;
+}
+
+#textoForca{
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.entropia p{
+    margin:8px 0;
+}
+
+@media(max-width:500px){
+
+.container{
+    width:95%;
+    padding:20px;
+}
+
+h1{
+    font-size:1.7rem;
+}
+
+}
